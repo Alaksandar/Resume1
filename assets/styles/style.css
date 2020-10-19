@@ -32,7 +32,7 @@
 
 .block_row .block_column{
     flex: 1 1 auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .block_column {
