@@ -9,11 +9,9 @@ function showList(e) {
     let h2 = e.target.closest("h2");
     if(!h2) return;
     let h2_active = h2.classList.toggle("active");
-    console.log(h2);
-
+   
     for(let div of showHideEl) {
         if(h2.parentElement.contains(div)) {
-            console.log(div);
             div.classList.toggle("hide")
         }
     }
