@@ -51,6 +51,7 @@ img {
 
 .block_column div{
     margin-top: 15px;
+    height: 100%;
 }
 
 .column_2 {
@@ -88,12 +89,17 @@ li {
     list-style-position: inside;
 }
 
-div {
-    transition: height .2s ease;
+p, li {
+    height: 20px;
+    transition: height .5s ease;
+    
 }
 
-div.hide {
+div.hide,
+div.hide p, 
+div.hide li{
     height: 0px;
     margin: 0px ;
+    transition: height .5s ease;
     overflow: hidden;
 }
